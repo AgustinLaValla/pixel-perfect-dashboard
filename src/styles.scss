@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* You can add global styles to this file, and also import other style files */
+  /* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+    
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #E91E63;
+  border-radius: 5px;
+  color: #E91E63;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+
+.form-group {
+  display: flex;
+
+  & > div {
+      display: flex;
+      align-items: center;
+      padding: 0px 10px;
+      border: 1px solid lightgrey;
+      font-size: 13px;
+      cursor: pointer;
+      transition: .2s;
+  }
+
+  & > div:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-right: none;
+  }
+
+  & > div:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+  }
+
+  & > div:hover {
+      background-color: #ddd;
+      transition: .2s;
+  }
+}
+
+.period, .picker {
+  span {
+      @media screen and (max-width:599px) {
+          font-size: 10px;
+      }
+  }
+}
+
+.period-arrows {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-5px);
+
+  & > i {
+      font-size: 1rem;
+  }
+
+  & > i:first-child {
+      transform: translateY(10px);
+  }
+}

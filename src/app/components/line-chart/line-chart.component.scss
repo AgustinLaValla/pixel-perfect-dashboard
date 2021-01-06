@@ -1,0 +1,9 @@
+canvas {
+    height: 250px !important;
+}
+
+@media screen and (max-width) {
+    canvas {
+        height: 200px !important;
+    }
+}

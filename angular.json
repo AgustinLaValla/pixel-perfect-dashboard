@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "my-appperfect-pixel-design"
+  "defaultProject": "my-appperfect-pixel-design",
+  "cli": {
+    "analytics": false
+  }
 }

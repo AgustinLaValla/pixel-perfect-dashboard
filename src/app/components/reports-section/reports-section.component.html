@@ -1,0 +1,46 @@
+<div class="report-container row">
+    <div class="report-header">
+        <h3>Reports</h3>
+        <div class="report-header-right">
+            <div class="form-group">
+                <div class="period">
+                    <span>Last Month</span>
+                    <div class="period-arrows">
+                        <i class="material-icons">arrow_drop_up</i>
+                        <i class="material-icons">arrow_drop_down</i>
+                    </div>
+                </div>
+                <div class="picker">
+                    <i class="material-icons">date_range</i>
+                    <span>01 Jan 2020 - 31 Jan 2020</span>
+                </div>
+            </div>
+
+            <div class="form-group scale">
+                <div class="period active">
+                    <span>Month</span>
+                </div>
+                <div class="period">
+                    <span>Week</span>
+                    <div class="period-arrows">
+
+                    </div>
+                </div>
+                <div class="period">
+                    <span>Day</span>
+                </div>
+            </div>
+            <i class="material-icons" id="settings">
+                settings
+            </i>
+        </div>
+    </div>
+    <div class="report-card" *ngFor="let report of reportArray">
+        <div class="card-data">
+            <p>{{report.title}}</p>
+            <p>{{report.price}}</p>
+        </div>
+        <app-c3-line-chart></app-c3-line-chart>
+    </div>
+
+</div>
